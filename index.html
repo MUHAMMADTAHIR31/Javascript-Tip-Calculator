@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		  <link rel = "stylesheet" href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+		  <script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		  <script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		  <link rel="stylesheet" href="style.css"/>
+		   <script src="script.js"></script>
+		<title>TIp CALCULATOR</title>   
+</head>
+
+<body>
+
+	<div data-role="page">
+		
+		  <div data-role="header" class="header">
+			<h1>TIP CALCULATOR</h1>
+		  </div>
+		  
+		   <div data-role="navbar">
+			<ul>
+			  <li>
+				
+				<a href="index.html" rel="external" class="ui-btn-active ui-state-persist">
+				  Home</a
+				>
+			  </li>
+			  <li>
+			   
+				 <a href="information.html" rel="external"  class="ui-btn"  >Information Page</a>
+			  </li>
+			</ul>
+		  </div>
+
+		  
+		 
+		<div class="container">
+			<div class="heading">TIP CALCULATOR</div>
+			<div class="wrapper">
+				
+
+
+				<p><b>Bill Amount</b></p>
+
+
+
+				<input type="text" id="amount"
+					placeholder="Amount to be paid">
+
+				
+
+
+				<p><b>How was the service ?</b></p>
+
+
+
+				<select id="services">
+					<option selected disabled hidden>
+						Select
+					</option>
+					<option value="0.25">25% - Top Notch</option>
+					<option value="0.20">20% - Excellent</option>
+					<option value="0.15">15% - Good</option>
+					<option value="0.10">10% - Bad</option>
+					<option value="0.05">5% - Worst</option>
+				</select>
+				<br/>
+				<button id="calculate" onclick=calculateTip(); >Calculate</button>
+			</div>
+
+
+			<div class="tip">
+				<p><b>Tip Amount</b> : <span id="tip_amount">0</span> </p>
+				<p><b>Total Amount</b> : <span id="total">0</span> </p>
+			</div>
+			
+			
+		</div>
+		
+		<div data-role="footer" class="footer">
+			 <p>Copyright ©  
+				<script>
+				  document.write(new Date().getFullYear())
+				</script>
+			   All rights reserved | Tip-Calculator </p>
+		  </div>
+    </div>
+	
+</body>
+
+</html>

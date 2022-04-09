@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change Me</title>
+
+    <link
+      rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	
+    <link rel="stylesheet" href="style.css">
+	
+  </head>
+  <body>
+   
+    <div data-role="page">
+     
+     <div data-role="header">
+        <h1>Tip Calculator</h1>
+      </div>
+
+
+     
+      <div data-role="navbar">
+        <ul>
+          <li>
+           
+            <a href="index.html" rel="external" class="ui-btn" >
+              Home</a
+            >
+          </li>
+          <li>
+           
+            <a href="information.html" rel="external" class="ui-btn-active ui-state-persist" >Information Page</a>
+          </li>
+        </ul>
+      </div>
+
+    
+      <div class="container">
+		  <div data-role="main" class="ui-content">
+			  <div class="wrape">
+					<p>Information Page</p>
+					<div>The tip is the money given as a gift for good service, to the person who serves you in a restaurant. 
+						<br/>In this project, a simple tip calculator is made which takes billing amount, type of service, and a number of persons as input.
+						<br/>As per the three inputs it generates a tip for the serving person.
+						<br/>To find out the tip we will take input from the user: Bill Amount (it is the amount of the total bill, we are taking this into amount variable), 
+						<br/>for the type of service we are using a drop-down menu having quality as the options in percentage (like good, bad, excellent, etc.), lastly, we are taking the number of persons as input (it will help to divide the tip equally among all the person).
+						<br/>A per the inputs from the user, we are calculating the tip and then printing it using the console.log() function.
+					</div>
+			 </div> 
+		  </div>
+	  </div>
+
+     
+      <div data-role="footer" class="footer">
+         <p>Copyright ©  
+			<script>
+			  document.write(new Date().getFullYear())
+			</script>
+		     All rights reserved | Tip-Calculator </p>
+      </div>
+    </div>
+
+   
+  </body>
+</html>
